@@ -1,0 +1,39 @@
+@charset "UTF-8";
+*{
+    margin: 0%;
+    padding: 0;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+h1, h2{
+    font-size: 3vw;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(255, 122, 144);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 100vh;
+    background: linear-gradient(rgb(165, 74, 165), purple);
+}
+.card{
+    width: 9vw;
+    height: 9vw;
+    margin: 1vw;
+    margin-bottom: 2vw;
+    background-color: rgb(48, 47, 47);
+}
+.tabela{
+    display: flex;
+    flex-direction: row;
+}
+#cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow-y: auto;
+}
