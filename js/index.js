@@ -37,11 +37,16 @@ function criarCards() {
           Game.valores.cardsabertoshtml = [];
 
         } else {
-          Game.valores.cardsabertoshtml[0].innerHTML = ``;
-          Game.valores.cardsabertoshtml[1].innerHTML = ``;
+            let arquivo0 = Game.valores.cardsabertoshtml[0]
+            let arquivo1 = Game.valores.cardsabertoshtml[1];
 
-          Game.valores.cardsabertos = [];
-          Game.valores.cardsabertoshtml = [];
+            setTimeout(() => {
+                Game.valores.cardsabertos = [];
+                Game.valores.cardsabertoshtml = [];
+                
+                arquivo0.innerHTML = ``;
+                arquivo1.innerHTML = ``;
+            }, 1000)
         }
       }
     });
